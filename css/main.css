@@ -50,10 +50,11 @@ nav a {
 header {
     width: 100%;
     height: 70vh;
-    background: url("../assets/images/photo-1464054313797-e27fb58e90a9.jpg");
+    background: url("../assets/images/photo-1464054313797-e27fb58e90a9-min.jpg");
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center bottom;
 }
 
 /*==========  Main Content  ==========*/
