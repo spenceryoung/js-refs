@@ -11,7 +11,3 @@ angular.module("MyApp.controllers", [])
         function ($scope, $http) {
 
         }])
-    .controller('ThreeCtrl', ['$scope', '$http',
-        function ($scope, $http) {
-
-        }])

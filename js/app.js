@@ -16,10 +16,6 @@ app.config([
             templateUrl: 'partials/two.html',
             controller: 'TwoCtrl'
         })
-        .when('/three', {
-            templateUrl: 'partials/three.html',
-            controller: 'ThreeCtrl'
-        })
         .otherwise({
             redirectTo: '/one'
         });

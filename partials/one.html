@@ -35,13 +35,46 @@
     <div class="code-section">
         <h3>Event Handler with parameters</h3>
 <pre><code>element.onevent = function() {
-    functionName(parameters);
+    functionName(args);
 };</code></pre>
     </div>
     <div class="code-section">
         <h3>Event listener with parameters</h3>
 <pre><code>element.addEventListener('event', function() {
-    functionName(parameters);
+    functionName(args);
 }, Boolean);</code></pre>
+    </div>
+</div>
+<h2>AJAX</h2>
+<div class="flex-section">
+    <div class="code-section">
+        <h3>Request and Response</h3>
+<pre><code>var xhr = new XMLHttpRequest();
+
+xhr.onload = function() {
+    if(xhr.status === 200) {
+        // Update
+    }
+};
+
+xhr.open('GET', 'path/to/file.html', true);
+xhr.send(null);</code></pre>
+    </div>
+    <div class="code-section">
+        <h3>Request and Response with JSON</h3>
+<pre><code>var xhr = new XMLHttpRequest();
+
+xhr.onload = function() {
+    if(xhr.status === 200) {
+        responseObject = JSON.parse(xhr.responseText);
+
+        for(var i=0; i&ltresponseObject.events.length; i++) {
+
+        }
+    }
+};
+
+xhr.open('GET', 'path/to/file.json', true);
+xhr.send(null);</code></pre>
     </div>
 </div>

@@ -34,13 +34,13 @@ nav li {
 }
 
 nav a {
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     color: #000;
 }
 
 .active-tab {
-    border-bottom: 5px solid #000;
+    border-bottom: 2px solid #000;
 }
 
 /*==========  Header  ==========*/
@@ -120,7 +120,7 @@ h3 {
 }
 
 pre {
-    margin: 5px 0;
+    margin: 5px;
     padding: 15px;
     background-color: #F2F2F2;
     overflow-x: auto;
@@ -141,7 +141,7 @@ pre {
 .social-networking-links a, .footer-tag a {
     text-decoration: none;
     font-size: 25px;
-    color: #000;
+    color: #727272;
 }
 
 .linked-in {
@@ -149,7 +149,7 @@ pre {
 }
 
 .social-networking-links a:hover, .footer-tag a:hover {
-    color: #fff;
+    color: #000;
 }
 
 .footer-tag {
@@ -159,7 +159,8 @@ pre {
 }
 
 .footer-tag a {
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 /*==========  For Desktop First  ==========*/
