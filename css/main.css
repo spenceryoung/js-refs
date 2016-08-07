@@ -2,7 +2,7 @@
 
 html, body, div, span, h1, h2, h3,
 h4, h5, h6, p, ol, ul, li, article,
-aside, footer, header, nav, section {
+aside, footer, header, nav, section, pre {
     margin: 0;
     padding: 0;
     border: 0;
@@ -16,7 +16,13 @@ aside, footer, header, nav, section {
 }
 
 nav {
+    position: fixed;
+    width: 100%;
     text-align: center;
+    background: linear-gradient(
+        rgba(0, 0, 0, .5),
+        rgba(0, 0, 0, .5)
+    );
 }
 
 nav ul {
@@ -32,12 +38,71 @@ nav li {
 nav a {
     font-size: 20px;
     text-decoration: none;
-    color: #000;
+    color: #fff;
+}
+
+.active-tab {
+    border-bottom: 5px solid #fff;
 }
 
 /*==========  Header  ==========*/
 
+header {
+    width: 100%;
+    height: 70vh;
+    background: url("../assets/images/photo-1464054313797-e27fb58e90a9.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 /*==========  Main Content  ==========*/
+
+body {
+    background-color: #F2F2F2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 25px auto;
+    background-color: #fff;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px #888;
+    box-shadow: 0 0 5px #888;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+h3 {
+    padding: 15px;
+}
+
+.flex-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+
+.code-section {
+    width: 500px;
+}
+
+pre {
+    margin: 5px 0;
+    padding: 15px;
+    background-color: #F2F2F2;
+    overflow-x: auto;
+}
 
 /*==========  Footer  ==========*/
 
@@ -53,65 +118,6 @@ nav a {
 
 @media only screen and (max-width : 768px) {
 
-    .container {
-        padding-top: 48px;
-    }
-
-    nav {
-        display: none;
-    }
-
-    /*==========  Mobile Navigation  ==========*/
-
-    .mobile-nav {
-        display: block;
-        position: fixed;
-        width: 100%;
-        background-color: #000;
-        border-bottom: 1px solid #fff;
-        z-index: 99;
-
-    }
-
-    .side-menu-btn {
-        float: right;
-        padding: 20px;
-    }
-
-    .side-menu-btn span {
-        display: block;
-        width: 25px;
-        height: 3px;
-        background: #fff;
-    }
-
-    .side-menu-btn span:nth-child(2) {
-        margin: 4px 0;
-    }
-
-    .side-menu {
-        position: fixed;
-        width: 100%;
-        display: none;
-        text-align: center;
-        margin-top: 48px;
-        background-color: #000;
-    }
-
-    .side-menu a {
-        font-size: 20px;
-        text-decoration: none;
-        color: #fff;
-    }
-
-    .side-menu li {
-        padding: 20px 0;
-    }
-
-    .side-menu li:not(:last-child) {
-        border-bottom: 1px solid #fff;
-    }
-
 }
 
 @media only screen and (max-width : 480px) {
@@ -119,27 +125,5 @@ nav a {
 }
 
 @media only screen and (max-width : 320px) {
-
-}
-
-/*==========  For Mobile First  ==========*/
-
-@media only screen and (min-width : 320px) {
-
-}
-
-@media only screen and (min-width : 480px) {
-
-}
-
-@media only screen and (min-width : 768px) {
-
-}
-
-@media only screen and (min-width : 992px) {
-
-}
-
-@media only screen and (min-width : 1200px) {
 
 }
