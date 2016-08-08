@@ -177,7 +177,9 @@ pre {
 
 @media only screen and (max-width : 768px) {
 
-}
+    header {
+        background-attachment: scroll;
+    }
 
 @media only screen and (max-width : 480px) {
 
