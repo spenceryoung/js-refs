@@ -49,6 +49,7 @@ h1 {
     position: relative;
     text-align: center;
     top: 50%;
+    padding: 0 5px;
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -117,6 +118,7 @@ h3 {
 
 .code-section {
     width: 500px;
+    overflow-x: auto;
 }
 
 pre {
@@ -179,6 +181,12 @@ pre {
 
 @media only screen and (max-width : 480px) {
 
+    /*=====  Header  =====*/
+
+    h1 {
+        font-size: 35px;
+    }
+
     /*=====  Footer  =====*/
 
     footer {
@@ -198,7 +206,6 @@ pre {
 
     .footer-tag a {
         font-size: 12px;
-        padding-right: 4px;
     }
 
 }
