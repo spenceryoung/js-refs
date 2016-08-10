@@ -1,0 +1,130 @@
+<div id="container" class="container">
+    <h2>DOM Queries</h2>
+    <div class="flex-section">
+        <div class="code-section">
+            <h3>Select id</h3>
+            <pre><code>var el = document.getElementById('id');</code></pre>
+        </div>
+        <div class="code-section">
+            <h3>Select class</h3>
+            <pre><code>var el = document.getElementsByClassName('class');</code></pre>
+        </div>
+        <div class="code-section">
+            <h3>Select single CSS</h3>
+            <pre><code>var el = document.querySelector('css selector');</code></pre>
+        </div>
+        <div class="code-section">
+            <h3>Select HTML elements</h3>
+            <pre><code>var el = document.getElementsByTagName('tagName');</code></pre>
+        </div>
+        <div class="code-section">
+            <h3>Select all CSS</h3>
+            <pre><code>var el = document.querySelectorAll('css selector');</code></pre>
+        </div>
+        <div class="code-section"></div>
+    </div>
+    <h2>Events</h2>
+    <div class="flex-section">
+        <div class="code-section">
+            <h3>Event Handler</h3>
+            <pre><code>element.onevent = functionName;</code></pre>
+        </div>
+        <div class="code-section">
+            <h3>Event listener</h3>
+            <pre><code>element.addEventListener('event', functionName, Boolean);</code></pre>
+        </div>
+        <div class="code-section">
+            <h3>Event Handler with parameters</h3>
+            <pre><code>element.onevent = function() {
+    functionName(args);
+};</code></pre>
+        </div>
+        <div class="code-section">
+            <h3>Event listener with parameters</h3>
+            <pre><code>element.addEventListener('event', function() {
+    functionName(args);
+}, Boolean);</code></pre>
+        </div>
+        <div class="code-section">
+            <h3>UI Events</h3>
+            <pre><code>load
+unload
+error
+resize
+scroll</code></pre>
+        </div>
+        <div class="code-section">
+            <h3>Keyboard Events</h3>
+            <pre><code>keydown
+keyup
+keypress</code></pre>
+        </div>
+        <div class="code-section">
+            <h3>Mouse Events</h3>
+            <pre><code>click
+dblclick
+mousedown
+mouseup
+mousemove
+mouseover
+mouseout</code></pre>
+        </div>
+        <div class="code-section">
+            <h3>Focus Events</h3>
+            <pre><code>focus / focusin
+blur / focusout</code></pre>
+        </div>
+        <div class="code-section">
+            <h3>Form Events</h3>
+            <pre><code>input
+change
+submit
+reset
+cut
+copy
+paste
+select</code></pre>
+        </div>
+        <div class="code-section">
+            <h3>Mutation Events</h3>
+            <pre><code>DOMSubtreeModified
+DOMNodeInserted
+DOMNodeRemoved
+DOMNodeInsertedIntoDocument
+DOMNodeRemovedFromDocument</code></pre>
+        </div>
+    </div>
+    <h2>AJAX</h2>
+    <div class="flex-section">
+        <div class="code-section">
+            <h3>Request and Response</h3>
+            <pre><code>var xhr = new XMLHttpRequest();
+
+xhr.onload = function() {
+    if(xhr.status === 200) {
+        // Update
+    }
+};
+
+xhr.open('GET', 'path/to/file.html', true);
+xhr.send(null);</code></pre>
+        </div>
+        <div class="code-section">
+            <h3>Request and Response with JSON</h3>
+            <pre><code>var xhr = new XMLHttpRequest();
+
+xhr.onload = function() {
+    if(xhr.status === 200) {
+        responseObject = JSON.parse(xhr.responseText);
+
+        for(var i=0; i&ltresponseObject.events.length; i++) {
+
+        }
+    }
+};
+
+xhr.open('GET', 'path/to/file.json', true);
+xhr.send(null);</code></pre>
+        </div>
+    </div>
+</div>

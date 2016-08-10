@@ -1,5 +1,5 @@
 $(function () {
-    $('#content').load('one.html #container')
+    $('#content').load('partials/one.html #container')
 });
 
 $('nav a').on('click', function(e) {
