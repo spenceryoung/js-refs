@@ -9,6 +9,10 @@ aside, footer, header, nav, section, pre {
     font-size: 100%;
 }
 
+html {
+    overflow-y: scroll;
+}
+
 /*==========  Navigation  ==========*/
 
 .mobile-nav, .side-menu {
