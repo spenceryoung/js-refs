@@ -8,7 +8,7 @@ var nodeList = document.getElementsByClassName('link'),
         if (xhr.status === 200) {
             content.innerHTML = xhr.responseText;
         }
-        document.location.hash = landUrl;
+        document.location.hash =  "/" + landUrl;
     };
     xhr.open('GET', landUrl, true);
     xhr.send(null);
