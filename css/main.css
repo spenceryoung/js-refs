@@ -184,6 +184,7 @@ pre {
     header {
         background-attachment: scroll;
     }
+}
 
 @media only screen and (max-width : 480px) {
 
